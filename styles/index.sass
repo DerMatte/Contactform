@@ -1,0 +1,90 @@
+$blue: #0068AE
+$grey: #BBB
+$white: #FFF
+$red: #FF3533
+$green: #67d270
+  
+html
+  height: 100%
+  background-color: #FFF
+  margin: 0
+  padding: 0
+
+body
+  height: 100%
+  background-color: #FFF
+  margin: 0
+  padding: 0
+  /*overflow: hidden*/
+  display: flex
+
+div
+  box-sizing: border-box
+img
+  max-width: 100%
+
+.main
+  display: flex
+  width: 100%
+  height: 100%
+  // max-height: 100%
+
+.left
+  flex: 0 1 50%
+  align-items: stretch;
+  background: center / contain no-repeat url("../pic/elena.png")
+  background-size: cover
+
+
+.right
+  flex: 0 1 50%
+  display: flex
+  height: 100%
+  flex-wrap: wrap
+  align-items: flex-start
+  h1
+    padding: 1em
+    color: $blue
+  form
+    // max-width: 600px
+    // text-align: center
+    margin: 1em 4em
+    @media screen and (min-width: 1720px)
+      padding-top: 6em
+    
+
+    input, textarea
+      border: 0
+      outline: 0
+      padding: 1em
+      -moz-border-radius: 8px
+      -webkit-border-radius: 8px
+      border-radius: 8px
+      display: block
+      width: 150%
+      margin-top: 1em
+      font-family: 'Merriweather', sans-serif
+      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+      resize: none
+      // .left-field
+      //   float: left
+      // .right-field
+      //   float: right
+
+    input:focus, textarea:focus
+      -moz-box-shadow: 0 0px 2px $red !important
+      -webkit-box-shadow: 0 0px 2px $red !important
+      box-shadow: 0 0px 2px $red !important
+    #input-submit
+      color: white
+      background: $red
+      cursor: pointer
+      &:hover
+        -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6)
+        -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6)
+        box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6)
+    textarea
+      // height: 126px
+      height: 2em
