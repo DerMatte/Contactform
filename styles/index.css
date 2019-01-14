@@ -33,6 +33,15 @@ img {
   height: 100%;
 }
 
+@media screen and (max-width: 750px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .left {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
@@ -74,7 +83,16 @@ img {
   }
 }
 
-.right form input, .right form textarea {
+.contactform {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: flexbox;
+}
+
+.contactform input, .contactform textarea {
   border: 0;
   outline: 0;
   padding: 1em;
@@ -88,23 +106,30 @@ img {
   resize: none;
 }
 
-.right form input:focus, .right form textarea:focus {
+.contactform input:focus, .contactform textarea:focus {
   -webkit-box-shadow: 0 0px 2px #FF3533 !important;
   box-shadow: 0 0px 2px #FF3533 !important;
 }
 
-.right form #input-submit {
+.contactform #input-submit {
   color: white;
   background: #FF3533;
   cursor: pointer;
 }
 
-.right form #input-submit:hover {
+.contactform #input-submit:hover {
   -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
   box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
 }
 
-.right form textarea {
+.contactform textarea {
   height: 2em;
+}
+
+.contactform footer {
+  color: #BBB;
+  font-size: 12px;
+  bottom: 1em;
+  right: 1em;
 }
 /*# sourceMappingURL=index.css.map */
