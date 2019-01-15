@@ -39,12 +39,13 @@ img
   width: 100%
   height: 100%
   // max-height: 100%
+  
   @media screen and (max-width: 750px)
     flex-direction: column
 
 .left
   flex: 0 1 50%
-  align-items: stretch;
+  align-items: stretch
   background: center / contain no-repeat url("../pic/elena.png")
   background-size: cover
 
@@ -60,17 +61,22 @@ img
   h1
     padding: 1em
     color: $blue
+    @media only screen and (max-width: 500px)
+      font-size: 25px
   form
     // max-width: 600px
     // text-align: center
     margin: 1em 4em
-    @media screen and (min-width: 1720px)
-      padding-top: 6em
+
+    
+
+    //@media screen and (min-width: 1720px)
+    //  padding-top: 6em
     
 .contactform
   justify-content: center
   align-content: center
-  display: flexbox
+  display: flex
   
 
   input, textarea
@@ -83,19 +89,25 @@ img
     display: block
     width: 150%
     margin-top: 1em
-    font-family: 'Merriweather', sans-serif
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
     resize: none
-    // .left-field
-    //   float: left
-    // .right-field
-    //   float: right
+
+
+
   input:focus, textarea:focus
     -moz-box-shadow: 0 0px 2px $red !important
     -webkit-box-shadow: 0 0px 2px $red !important
     box-shadow: 0 0px 2px $red !important
+
+    &:valid
+      -moz-box-shadow: 0 0px 2px $green !important
+      -webkit-box-shadow: 0 0px 2px $green !important
+      box-shadow: 0 0px 2px $green !important
+      
+      input:not(:placeholder-shown)
+
   #input-submit
     color: white
     background: $red
@@ -108,7 +120,7 @@ img
     // height: 126px
     height: 2em
 
-  footer
+/*   footer
     color: $grey
     position: fixed
     text-decoration-style: none
@@ -117,8 +129,8 @@ img
     bottom: 1em
     right: 1em
 
-    a
+    p
       position: absolute
       bottom: 0
       right: 0
-      float: right
+      float: right */

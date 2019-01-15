@@ -16,26 +16,32 @@
   <div class="main">
     <div class="left"></div>
     <div class="right">
-      <h1>EDV Unterstützung der GDS1</h1>
-      <break></break>
-      <div class="contactform">
-        <form class="cf" name="contact" method="POST" data-netlify="true">
-          <div class="half left-field cf">
-            <input required type="text" id="input-name" placeholder="Name">
-            <input required type="email" id="input-email" placeholder="Email address">
-            <input type="text" id="input-subject" placeholder="Subject">
-          </div>
-          <div class="half right-field cf">
-            <textarea required name="message" type="text" id="input-message" placeholder="Message"></textarea>
-          </div>
-          <input type="submit" value="Submit" id="input-submit">
-        </form>
-      </div>  
-    </div>
+      <div class="rightleft">
+        <h1>EDV Unterstützung der GDS1</h1>
+
+        <div class="contactform">
+          <form class="cf" name="contact" method="POST" data-netlify="true">
+            <div class="half left-field cf">
+              <input required type="text" id="input-name" placeholder="Name">
+              <input required type="email" id="input-email" placeholder="E-mail" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+              <input type="text" id="input-zimmer" placeholder="Zimmer">
+            </div>
+            <div class="half right-field cf">
+              <textarea required name="message" title="Bitte geben sie eine Nachricht ein." type="text" id="input-message"
+                placeholder="Text"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="input-submit">
+          </form>
+        </div>
+      </div>
+      <div class="rightright">
         <footer>
-          
-          <p>&copy; 2019 Matthias <a href="https://www.gds1.de">Homepage</a></p>
+          <p><a href="https://www.gds1.de">Homepage</a> &copy; 2019 Matthias</p>
         </footer>
+      </div>
+    </div>
+
+
   </div>
   <!-- Scripts -->
   <script src="scripts/index.js"></script>
