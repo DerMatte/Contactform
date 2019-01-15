@@ -3,7 +3,16 @@ $grey: #BBB
 $white: #FFF
 $red: #FF3533
 $green: #67d270
-  
+
+$font-stack: 'Lato', 'Helvetica', sans-serif
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+// @font-face
+//   font-family: "Fira Sans"
+//   src: local('FiraSans')
+//   src: url('font/FiraSans-Light.ttf')
+
 html
   height: 100%
   background-color: #FFF
@@ -17,6 +26,8 @@ body
   padding: 0
   /*overflow: hidden*/
   display: flex
+  font-family: $font-stack
+  font-weight: 300
 
 div
   box-sizing: border-box
@@ -99,6 +110,15 @@ img
 
   footer
     color: $grey
+    position: fixed
+    text-decoration-style: none
+    display: inline-block
     font-size: 12px
     bottom: 1em
     right: 1em
+
+    a
+      position: absolute
+      bottom: 0
+      right: 0
+      float: right

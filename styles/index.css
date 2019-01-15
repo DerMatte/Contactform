@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 html {
   height: 100%;
   background-color: #FFF;
@@ -14,6 +15,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Lato", "Helvetica", sans-serif;
+  font-weight: 300;
 }
 
 div {
@@ -128,8 +131,19 @@ img {
 
 .contactform footer {
   color: #BBB;
+  position: fixed;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  display: inline-block;
   font-size: 12px;
   bottom: 1em;
   right: 1em;
+}
+
+.contactform footer a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
 }
 /*# sourceMappingURL=index.css.map */
