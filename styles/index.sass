@@ -6,7 +6,7 @@ $green: #67d270
 
 $font-stack: 'Lato', 'Helvetica', sans-serif
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400')
 
 // @font-face
 //   font-family: "Fira Sans"
@@ -107,6 +107,36 @@ img
       box-shadow: 0 0px 2px $green !important
       
       input:not(:placeholder-shown)
+
+    &:invalid
+
+      @keyframes shake
+        from,
+        to
+          -webkit-transform: translate3d(0, 0, 0)
+          transform: translate3d(0, 0, 0)
+
+          10%,
+          30%,
+          50%,
+          70%,
+          90%
+          -webkit-transform: translate3d(-10px, 0, 0)
+          transform: translate3d(-10px, 0, 0)
+
+          20%,
+          40%,
+          60%,
+          80%
+          -webkit-transform: translate3d(10px, 0, 0)
+          transform: translate3d(10px, 0, 0)
+
+
+      .shake
+        -webkit-animation-name: shake
+        animation-name: shake
+
+      
 
   #input-submit
     color: white

@@ -4,3 +4,8 @@
  */
 
 console.log("JavaScript is amazing!");
+
+function addClass() {
+    var element = document.getElementById("input-zimmer");
+    element.classList.add("mystyle");
+  } 

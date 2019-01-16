@@ -10,6 +10,8 @@
   <!--  Styles  -->
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="styles/awesomplete.css" />
+  <script src="scripts/awesomplete.js" async></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
             <div class="half left-field cf">
               <input required type="text" id="input-name" placeholder="Name">
               <input required type="email" id="input-email" placeholder="E-mail" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
-              <input type="text" id="input-zimmer" placeholder="Zimmer">
+              <input type="text" id="input-zimmer" placeholder="Zimmer" data-list="D100, D104, D109, D110, D200, D201, D202, D203, D204, D205, D206, D208, D209">
             </div>
             <div class="half right-field cf">
               <textarea required name="message" title="Bitte geben sie eine Nachricht ein." type="text" id="input-message"
